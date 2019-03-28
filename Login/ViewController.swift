@@ -39,7 +39,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UINavigationControlle
         admin = profile(userName: "admin", password: "54321", image: images[1])
         
         profiles = [marlon,admin]
-        
+      
         paswwordTextField.delegate = self
         
     }
@@ -56,27 +56,13 @@ class ViewController: UIViewController,UITextFieldDelegate,UINavigationControlle
     }
     
     
-    func textCredential(){
-        for i in profiles{
-//            user = userNameTextField.text
-            if (userNameTextField.text == i.userName && paswwordTextField.text == i.password){
-                userPhotoImageView.image = i.image
-            }else{
-                print("ok, go ahead")
-            }
-        }
-        
-    }
-    
-    
-    
     @IBAction func userLogIn(_ sender: UIButton) {
         for i in profiles{
-            //            user = userNameTextField.text
             if (userNameTextField.text == i.userName && paswwordTextField.text == i.password){
                 userPhotoImageView.image = i.image
             }else{
                 userPhotoImageView.image = UIImage(named: "defaultphoto_2x")
+                print("I'm here")
             }
         }
         
