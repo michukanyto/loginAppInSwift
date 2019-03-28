@@ -18,30 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJZ-tG-yw0">
-                                <rect key="frame" x="20" y="188" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJZ-tG-yw0">
+                                <rect key="frame" x="20" y="116" width="127" height="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-8n-t3x">
-                                <rect key="frame" x="20" y="226" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-8n-t3x">
+                                <rect key="frame" x="20" y="154" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2vA-6o-Pa0">
-                                <rect key="frame" x="20" y="304" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2vA-6o-Pa0">
+                                <rect key="frame" x="20" y="232" width="127" height="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usx-3U-wyQ">
-                                <rect key="frame" x="20" y="342" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usx-3U-wyQ">
+                                <rect key="frame" x="20" y="270" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -49,33 +45,62 @@
                                     <action selector="editingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Qf0-gt-mEd"/>
                                 </connections>
                             </textField>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultphoto_2x" translatesAutoresizingMaskIntoConstraints="NO" id="J1d-OA-13h">
-                                <rect key="frame" x="87" y="500" width="238" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-Oe-Kqx">
+                                <rect key="frame" x="75" y="759" width="72" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="12"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="userLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yMy-xW-xNb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIQ-cW-j5O">
+                                <rect key="frame" x="267" y="759" width="72" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="12"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="userSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTn-pa-m7f"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="defaultphoto_2x" translatesAutoresizingMaskIntoConstraints="NO" id="J1d-OA-13h">
+                                <rect key="frame" x="75" y="387" width="264" height="265"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="J3u-py-chf" appends="YES" id="TQd-qO-wDK"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-Oe-Kqx">
-                                <rect key="frame" x="87" y="433" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log in"/>
-                                <connections>
-                                    <action selector="userLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yMy-xW-xNb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIQ-cW-j5O">
-                                <rect key="frame" x="279" y="433" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign in"/>
-                                <connections>
-                                    <action selector="userSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTn-pa-m7f"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J1d-OA-13h" secondAttribute="trailing" constant="75" id="0QM-z5-As0"/>
+                            <constraint firstItem="mJZ-tG-yw0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="0yh-t6-Bbt"/>
+                            <constraint firstItem="2vA-6o-Pa0" firstAttribute="top" secondItem="TxF-8n-t3x" secondAttribute="bottom" constant="48" id="9TC-4p-fVF"/>
+                            <constraint firstItem="QIQ-cW-j5O" firstAttribute="leading" secondItem="ccq-Oe-Kqx" secondAttribute="trailing" constant="120" id="9gT-K8-mUz"/>
+                            <constraint firstItem="mJZ-tG-yw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9qN-EI-Y2d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QIQ-cW-j5O" secondAttribute="bottom" constant="74" id="BeY-Fr-qMi"/>
+                            <constraint firstItem="2vA-6o-Pa0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OMM-6T-PbR"/>
+                            <constraint firstItem="ccq-Oe-Kqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="TaU-cS-gUV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mJZ-tG-yw0" secondAttribute="trailing" constant="297" id="Vfi-56-kKU"/>
+                            <constraint firstItem="usx-3U-wyQ" firstAttribute="top" secondItem="2vA-6o-Pa0" secondAttribute="bottom" constant="8" id="bLX-sx-3tC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2vA-6o-Pa0" secondAttribute="trailing" constant="297" id="dZw-aQ-QFx"/>
+                            <constraint firstItem="usx-3U-wyQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fS1-JB-gsz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TxF-8n-t3x" secondAttribute="trailing" constant="20" id="fiX-Kv-PMf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QIQ-cW-j5O" secondAttribute="trailing" constant="75" id="fuy-qx-fwr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="usx-3U-wyQ" secondAttribute="trailing" constant="20" id="lbZ-Mn-GBF"/>
+                            <constraint firstItem="J1d-OA-13h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="mnO-xO-Vyw"/>
+                            <constraint firstItem="ccq-Oe-Kqx" firstAttribute="top" secondItem="J1d-OA-13h" secondAttribute="bottom" constant="86" id="r1h-FU-dyw"/>
+                            <constraint firstItem="J1d-OA-13h" firstAttribute="top" secondItem="usx-3U-wyQ" secondAttribute="bottom" constant="87" id="sLw-Ox-Lb3"/>
+                            <constraint firstItem="TxF-8n-t3x" firstAttribute="top" secondItem="mJZ-tG-yw0" secondAttribute="bottom" constant="8" id="sVg-rZ-swG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ccq-Oe-Kqx" secondAttribute="bottom" constant="74" id="sVk-B4-sc8"/>
+                            <constraint firstItem="QIQ-cW-j5O" firstAttribute="top" secondItem="J1d-OA-13h" secondAttribute="bottom" constant="86" id="vfk-l2-uWQ"/>
+                            <constraint firstItem="TxF-8n-t3x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wQe-p5-wyf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="J3u-py-chf" appends="YES" id="rE0-D1-50q"/>

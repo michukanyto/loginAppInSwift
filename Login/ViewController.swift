@@ -49,9 +49,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UINavigationControlle
         return true
     }
     
-//    func textFieldDidEndEditing(_ userName: String,_ password: String,_ imageUser: UIImageView) {
-//
-//    }
+
     
     @IBAction func editingDidEnd(_ sender: UITextField) {
         userLogIn(logInButton)
@@ -84,11 +82,6 @@ class ViewController: UIViewController,UITextFieldDelegate,UINavigationControlle
         
     }
     
-    
-//    private func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        paswwordTextField.resignFirstResponder()
-//        return true
-//    }
     
     @IBAction func selectImage2(_ sender: UITapGestureRecognizer) {
         paswwordTextField.resignFirstResponder()
